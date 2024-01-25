@@ -36,6 +36,3 @@ fn main() {
         println!("Num {} made to one?: {}", (t + 1), nums[t]);
     }
 }
-
-
-
