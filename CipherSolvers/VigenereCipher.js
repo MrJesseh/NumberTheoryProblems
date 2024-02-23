@@ -22,6 +22,7 @@ function DecryptVigenere(cipher, key){
 }
 
 function EncryptVigenere(text, key){
+    text = text.replace(/\s+/g, '');
     let textArray = text.split("");
     let keyArray = key.split("");
     let resultArray = [];
@@ -42,4 +43,4 @@ function EncryptVigenere(text, key){
 }
 
 console.log(DecryptVigenere('aelkqgvpppdw', 'password'));
-console.log(EncryptVigenere('letsusemaple', 'password'));
+console.log(EncryptVigenere('lets use maple', 'password'));
