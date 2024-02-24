@@ -39,7 +39,7 @@ function EncryptCaesar(text, shift){
 
     for(let i = 0; i < textArray.length; i++){
         let currentLetterIndex = letters.indexOf(textArray[i]);
-        let newLetterIndex = (currentLetterIndex + letters.length + keyIndex) % letters.length;
+        let newLetterIndex = (currentLetterIndex + letters.length + shift) % letters.length;
         resultArray.push(letters[newLetterIndex]);
     }
     return resultArray;
